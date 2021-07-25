@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weight Converter</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="row">
+        <div class="col-md-12 col-lg-12 col-xl-12 col-xxl-12 col-sm-6">
+          <h1 class="display-4 fw-bold mb-3 text-center">Converter</h1>
+          <select
+            id="mainSelect"
+            class="form-select form-select-lg mb-5 mt-2 text-dark fs-4"
+            name="a"
+            id="a"
+          >
+            <option class="option fs-3" value="MilliGram">MilliGram</option>
+            <option class="optionfs-3" value="Gram">Gram</option>
+            <option class="optionfs-3" value="KiloGram">KiloGram</option>
+            <option class="optionfs-3" value="Sentner">Sentner</option>
+            <option class="optionfs-3" value="Tonna">Tonna</option>
+          </select>
+          <form>
+            <div class="form-group">
+              <input
+                type="number"
+                id="mainInput"
+                class="form-control form-control-lg fs-3"
+                placeholder="Enter Pounds..."
+              />
+            </div>
+          </form>
+          <div id="output" class="mt-2">
+            <div class="card bg-primary py-3 px-2 mb-2">
+              <div class="card-block">
+                <h4>MilliGrams:</h4>
+                <div id="milliOutput"></div>
+              </div>
+            </div>
+            <div class="card bg-danger py-3 px-2 mb-2">
+              <div class="card-block">
+                <h4>Grams:</h4>
+                <div id="gramsOutput"></div>
+              </div>
+            </div>
+
+            <div class="card bg-success py-3 px-2 mb-2">
+              <div class="card-block">
+                <h4>KiloGrams:</h4>
+                <div id="kgOutput"></div>
+              </div>
+            </div>
+            <div class="card bg-info text-dark py-3 px-2 mb-2">
+              <div class="card-block">
+                <h4>Sentners:</h4>
+                <div id="sentOutput"></div>
+              </div>
+            </div>
+
+            <div class="card bg-warning text-dark py-3 px-2">
+              <div class="card-block">
+                <h4>Tons:</h4>
+                <div id="tonOutput"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h2 class="text-white text-center my-3 fs-1 fw-bold display-4 w-100">
+        Umidjon Developer
+      </h2>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
